@@ -2,11 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
 </head>
 <body>
     <h1>Objects</h1>
@@ -29,5 +25,15 @@
             document.write(key+':'+coworkers[key]+'<br>');
         }
     </script>
+    <h2>Property & Method</h2>
+    <script>
+        coworkers.showAll = function(){
+            for(var key in this){
+                document.write(key+':'+this[key]+'<br>');
+            }
+        }
+        coworkers.showAll();
+    </script>
+
 </body>
 </html>
